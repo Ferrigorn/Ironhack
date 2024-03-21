@@ -12,73 +12,122 @@
         <h1>Bomb-Attack</h1>
       </header>
       <div class="container-grid">
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
+          <!--Container per a cada bomba, el tabindex es perque funcioni el FOCUS-->
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <!--Container per la part frontal-->
+            <audio
+              id="explosion"
+              src="/Resources/medium-explosion-40472.mp3"
+            ></audio>
+            <!--Audio que soni quan cliques a la carta-->
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
+            <!--Onclick es la funcio que fa que soni l'audio-->
           </div>
           <div class="back">
+            <!--Container per la part posterior-->
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <audio
+              id="extintor"
+              src="/Resources/estintor-194493 (1).mp3"
+            ></audio>
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('extintor').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/extintor.png" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
           </div>
         </div>
-        <div class="container-bomb">
+        <div class="container-bomb" tabindex="0">
           <div class="front">
-            <img src="/Resources/bomb.webp" alt="bomba" />
+            <img
+              src="/Resources/bomb.webp"
+              alt="bomba"
+              onclick="document.getElementById('explosion').play()"
+            />
           </div>
           <div class="back">
             <img src="/Resources/Explosion.jpg" alt="explosion" />
