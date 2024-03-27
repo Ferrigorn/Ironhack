@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.container-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header {
+  margin: 10px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 150px;
+  object-fit: contain;
+}
+.container-grid {
+  width: 80vw;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+.container-bomb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* overflow: hidden; */ /*Si està activat, només es veu la cara frontal*/
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+.container-bomb:focus {
+  transform: rotateY(180deg);
+}
+.front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}

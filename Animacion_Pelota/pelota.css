@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-general {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-pelota {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pelota {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  animation: rebota 3s infinite;
+  position: absolute;
+}
+@keyframes rebota {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(350px);
+    width: 400px;
+    height: 250px;
+  }
+  75%,
+  25% {
+    width: 300px;
+    height: 300px;
+  }
+}
+.sombra {
+  width: 300px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.492);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  animation: sombreado 3s infinite;
+}
+@keyframes sombreado {
+  0%,
+  100% {
+    width: 200px;
+  }
+  /* 40%,
+  60% {
+    width: 200px;
+    height: 0;
+  } */
+  50% {
+    width: 0;
+    height: 0;
+  }
+  25%,
+  75% {
+    width: 350px;
+    height: 3px;
+  }
+}
