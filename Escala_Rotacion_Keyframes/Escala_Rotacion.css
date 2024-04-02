@@ -13,19 +13,17 @@
 img {
   width: 400px;
   height: 400px;
-  animation: rotacion 3s linear infinite, scale 3s infinite;
+  animation: rotacion 3s infinite;
 }
+/*Definim cada punt per les dues animacions, si no no funciona*/
 @keyframes rotacion {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg) scale(1);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/*No posem from o 0% perque si no no gira*/
-@keyframes scale {
   50% {
-    transform: scale(1.5);
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }
