@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container_text {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+h1 {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap; /*Perque posi totes les lletres a la mateixa linia*/
+  border-right: 3px black solid; /*FA la sensació de tenir la barra d'escriptura*/
+  animation: aparicion 5s steps(20) infinite, barra_escritura 0.5s step-end; /*steps divideix l'animació en (x) passos. Step-end perque es quedi al final*/
+}
+@keyframes aparicion {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* @keyframes barra_escritura {
+  50% {
+    border-color: transparent;
+  }
+} */
+h2 {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: right-to-left 5s infinite;
+}
+@keyframes right-to-left {
+  from {
+    transform: translateX(475px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
