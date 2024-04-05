@@ -1,0 +1,45 @@
+body {
+  background-color: rgba(109, 204, 109, 0.449);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; /*Ponemos position para que la imagen del humo esté "por debajo" de los otros elementos*/
+}
+
+.imagen {
+  width: 70vw;
+  height: 60vh;
+  position: absolute;
+  top: -20px; /*Posicion inicial de la imagen*/
+  left: 300px; /*Posicion inicial de la imagen*/
+  animation: ondular 5s infinite;
+}
+@keyframes ondular {
+  from {
+    transform: translateX(0) translateY(100px) rotateY(0);
+  }
+  to {
+    transform: translateX(200px) translateY(0) rotateY(90deg);
+    opacity: 0;
+  }
+}
+img {
+  width: 400px;
+  height: auto;
+}
+.span1 {
+  display: inline-block;
+  animation: desaparecer 5s infinite;
+}
+
+@keyframes desaparecer {
+  from {
+    transform: translateX(0) translateY(0) skew(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px) translateY(-200px) skew(-50deg);
+    opacity: 0;
+  }
+}
