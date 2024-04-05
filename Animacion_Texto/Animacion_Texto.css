@@ -32,25 +32,34 @@ h1 {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 60%;
   }
 }
-/* @keyframes barra_escritura {
+@keyframes barra_escritura {
   50% {
     border-color: transparent;
   }
-} */
-h2 {
+}
+.esp {
   width: 50%;
   overflow: hidden;
   white-space: nowrap;
-  animation: right-to-left 5s infinite;
+  animation: right-to-left 5s ease-in-out infinite;
 }
 @keyframes right-to-left {
   from {
-    transform: translateX(475px);
+    transform: translateX(550px);
   }
   to {
     transform: translateX(0px);
   }
+}
+.english {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: mostrar 5s infinite;
+}
+@keyframes mostrar {
 }
