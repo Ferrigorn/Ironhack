@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuenta descendente</title>
+  </head>
+  <body>
+    <h1>Cuenta descendente de 50 a 20</h1>
+    <div id="cuenta"></div>
+    <script>
+      let i = 51;
+      let cuenta = document.getElementById("cuenta");
+
+      do {
+        i--;
+        cuenta.innerHTML += " " + i;
+      } while (i > 20);
+    </script>
+  </body>
+</html>

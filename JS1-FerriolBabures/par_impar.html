@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muestra números pares</title>
+  </head>
+  <body>
+    <h1>Escoje dos números</h1>
+    <h3>Y te mostraremos los numeros pares que haya entre los dos</h3>
+    <label for="primernum">Primer Numero</label>
+    <input id="primernum" name="primernum" type="number" />
+    <label for="segundonum">Segundo Numero</label>
+    <input id="segundonum" name="segundonum" type="number" />
+    <button id="mostrarpares" onclick="mostrarnumpares()">Mostrar pares</button>
+    <div id="numerospares"></div>
+    <script>
+      function mostrarnumpares() {
+        let primernum = parseInt(document.getElementById("primernum").value);
+        let segundonum = parseInt(document.getElementById("segundonum").value);
+        let resultado = "";
+        for (let i = primernum; i <= segundonum; i++) {
+          if (i % 2 === 0) {
+            console.log(i);
+            resultado += " " + i;
+          }
+        }
+        let contenedor = document.getElementById("numerospares");
+        contenedor.innerHTML = " " + resultado;
+      }
+    </script>
+  </body>
+</html>
